@@ -1,0 +1,21 @@
+import turtle
+myPen = turtle.Turtle()
+myPen.color("DARK GREEN")
+name = input(" ENTER YOUR FAVOURITE LETTER FROM THE FOLLOWING TO FIND YOUR FIRE ZODIAC SIGN!!!: L, A , S ") # ALLOWS THE USER TO INSERT AN INPUT 
+L = "LEO"
+A = "ARIES"
+S = "SAGITTARIUS"
+if name is "A":# TELLS THE PERSON INSERTING AN INPUT ABOUT THEIR ZODIAC SIGN
+  print ("ARIES")
+if name is "L":
+  print ("LEO")
+if name is "S":
+ print ("SAGITTARIUS")
+for x in range(100): # MAKES A SPIRAL OUT OF YOUR INPUT BEFORE IN LINE#4
+   myPen.pencolor('colors'[x%4])
+   myPen.penup()
+   myPen.forward(x*4)
+   myPen.pendown()
+   myPen.write(name, font = ("Arial", int( (120) / 20), "bold"))
+   myPen.left(92)
+   myPen.shape("turtle") # makes a cute turtle 
