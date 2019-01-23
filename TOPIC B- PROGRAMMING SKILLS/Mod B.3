@@ -1,0 +1,20 @@
+import turtle
+myPen = turtle.Turtle()
+
+circleColors = [(158, 108, 1),(158, 108, 1),(158, 108, 1),(158, 108, 1),(158, 108, 1),(158, 108, 1),(158,108, 1),(158, 108, 1),(158, 108, 1),(158, 108, 1),(158, 108, 1)]
+
+def drawCircle(rgb) :
+  myPen.shape("turtle")
+  myPen.color(rgb)
+  myPen.begin_fill()
+  myPen.circle(8)
+  myPen.end_fill()
+  myPen.down()
+  myPen.forward(22)
+  myPen.up()
+  myPen.forward(22)
+
+circleNumber = 0
+for circleIndex in range(10) :
+    drawCircle("circleColours"[circleNumber])
+    circleNumber = circleNumber + 1
